@@ -1,0 +1,7 @@
+Approach and challenges faced:
+
+I started web app with python2.7 in backend and frontend frame work was done with flask.
+I have used dictionary in python to save car infomration instead of deploying a Database because Accessing infomration from Dictionary is quiet faster and i believe we dont have need for database as 
+number of cars could be hardly be 100 practically and also it must run on a system which have minimum configuartions.
+As i have used dictionary if suppose server fails then there would be a chance of loosing information/data stored. For this reason i made a log file and if at all there is server failure, restarting server 
+would work as i have fecthed data from log file.

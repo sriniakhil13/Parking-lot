@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <body>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button onclick='location.href="http://127.0.0.1:5000/back"' style="background-color:#04d8ff">HOME</button>
+      <table border = "1" align="center" style="border-color: black;background-color: powderblue;text-align: center" >
+        <tr style="background-color: beige;padding: 6px 6px;height:40px;width: 200px">
+                <th style="height:40px;width: 200px">Slot number</th>
+                <th style="height:40px;width: 200px">Car Number</th>
+                <th style="height:40px;width: 200px">Color</th>
+            </tr>
+         {% for key, value in result.iteritems() %}
+
+
+            <tr style="height:40px;width: 200px">
+               <td style="height:40px;width: 200px"> {{ key }} </td>
+               <td style="height:40px;width: 200px"> {{ value[0] }} </td>
+                <td style="height:40px;width: 200px"> {{ value[1] }} </td>
+            </tr>
+
+         {% endfor %}
+      </table>
+
+   </body>
+</html>
